@@ -1,8 +1,8 @@
 #!/bin/bash 
 
-masterip=13.232.147.53
-nodeip=3.6.38.211
-keyname=/home/sandeep/Downloads/pem/test1.pem
+masterip=
+nodeip=
+keyname=/home/naagar/Downloads/pem/test1.pem
 key=`cat ~/.ssh/id_rsa.pub`
 sed -i "2s/.*/$masterip/" /root/kube-cluster/hosts
 sed -i "5s/.*/$nodeip/" /root/kube-cluster/hosts
